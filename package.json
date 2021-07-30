@@ -19,6 +19,7 @@
     "remark": "remark -r .remarkrc -i .gitignore . .github",
     "tsc": "tsc -p src/tsconfig.json",
     "lint": "yarn cspell && yarn eslint && yarn remark",
+    "format": "yarn prettier",
     "test": "yarn tsc && nyc mocha dist --exit",
     "bundle": "ncc build src/main.ts -o publish"
   },

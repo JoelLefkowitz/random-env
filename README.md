@@ -39,6 +39,12 @@ To run unit tests:
 yarn test
 ```
 
+To run the test action locally:
+
+```bash
+act -j test
+```
+
 ## Tooling
 
 To run linters:
@@ -112,8 +118,8 @@ Lots of love to the open source community!
 
 <!-- Health shields -->
 
-[codacy_shield]: https://img.shields.io/codacy/grade/ac5e502af3894dd49fcd811d671d2c65
-[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/ac5e502af3894dd49fcd811d671d2c65
+[codacy_shield]: https://img.shields.io/codacy/grade/91b70f5bf54b4f0a9bebf839321a8b8d
+[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/91b70f5bf54b4f0a9bebf839321a8b8d
 
 <!-- Repository shields -->
 
