@@ -1,0 +1,14 @@
+name: "random-env"
+description: "Github action to set global environment variables to random values."
+author: "Joel Lefkowitz"
+inputs:
+  names:
+    description: "Names to set as random environment variables"
+    required: false
+    default: ""
+branding:
+  icon: "shuffle"
+  color: "gray-dark"
+runs:
+  using: "node12"
+  main: "publish/index.js"
