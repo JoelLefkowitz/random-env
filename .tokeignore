@@ -1,1 +1,6 @@
+*.json
+*.md
+*.yml
+publish/*
 yarn.lock
+
