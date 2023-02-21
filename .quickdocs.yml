@@ -1,0 +1,6 @@
+project: random-env
+version: 1.0.0
+author: Joel Lefkowitz
+verbose_name: Random env
+html_title: Random env
+github_url: https://github.com/joellefkowitz/random-env

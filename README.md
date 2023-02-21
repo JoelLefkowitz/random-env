@@ -1,15 +1,16 @@
 # Random env
 
-Github action to set global environment variables to random values.
+GitHub action to set global environment variables to random values.
 
 ## Status
 
-| Source     | Shields                                                                                                                     |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Project    | ![release][release_shield] ![license][license_shield] ![lines][lines_shield] ![languages][languages_shield]                 |
-| Health     | ![codacy][codacy_shield] ![codacy_coverage][codacy_coverage_shield]                                                         |
-| Repository | ![issues][issues_shield] ![issues_closed][issues_closed_shield] ![pulls][pulls_shield] ![pulls_closed][pulls_closed_shield] |
-| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield]          |
+| Source     | Shields                                                                |
+| ---------- | ---------------------------------------------------------------------- |
+| Project    | ![latest_release] ![license] ![line_count] ![language_count]           |
+| Health     | ![documentation] ![review_action] ![codacy_quality] ![codacy_coverage] |
+| Publishers | ![npm_version] ![npm_downloads]                                        |
+| Repository | ![open_issues] ![closed_issues] ![open_pulls] ![closed_pulls]          |
+| Activity   | ![contributors] ![monthly_commits] ![last_commit]                      |
 
 ## Usage
 
@@ -26,50 +27,62 @@ steps:
     run: printenv
 ```
 
+Example output:
+
 ```sh
 TEST_EMAIL=9102634d826b733e828a19317250337aw
 TEST_PASSWORD=943b9f5e0a0b3d9acbfe05779dfab69f
 ```
 
+## Installation
+
+```bash
+npm i random-env
+```
+
 ## Tests
 
-To run unit tests:
+To run tests:
 
 ```bash
-yarn test
+nps test
 ```
 
-To run the test action locally:
+## Documentation
+
+This repository's documentation is hosted on [Read the Docs](https://random-env.readthedocs.io/en/latest).
+
+To generate the documentation locally:
 
 ```bash
-act -j test
+quickdocs
 ```
 
-## Tooling
+## Linters
 
 To run linters:
 
 ```bash
-yarn lint
+nps lint
 ```
+
+## Formatters
 
 To run formatters:
 
 ```bash
-yarn format
+nps format
 ```
 
 ## Continuous integration
 
-This repository uses github actions to lint and test each commit. Formatting tasks and writing/generating documentation must be done before committing new code.
+This repository uses GitHub Actions to lint and test each commit. Each commit should be formatted and its corresponding documentation should be updated.
 
 ## Versioning
 
-This repository adheres to semantic versioning standards.
-For more information on semantic versioning visit [SemVer][semver].
+This repository adheres to semantic versioning standards. For more information on semantic versioning visit [semver](https://semver.org).
 
-Bump2version is used to version and tag changes.
-For example:
+Bump2version is used to version and tag changes. For example:
 
 ```bash
 bump2version patch
@@ -77,59 +90,40 @@ bump2version patch
 
 ## Changelog
 
-Please read this repository's [CHANGELOG](CHANGELOG.md) for details on changes that have been made.
+Please read this repository's [changelog](CHANGELOG.md) for details on changes that have been made.
 
 ## Contributing
 
-Please read this repository's guidelines on [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+Please read this repository's guidelines on [contributing](CONTRIBUTING.md) for details on the process for submitting pull requests. Moreover, our [code of conduct](CODE_OF_CONDUCT.md) declares our collaboration standards.
 
 ## Contributors
 
-- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][author]
-
-[![Buy Me A Coffee][coffee_button]][coffee]
+- [Joel Lefkowitz](https://github.com/joellefkowitz) - Initial work
 
 ## Remarks
 
 Lots of love to the open source community!
 
-![Be kind][be_kind]
+<p align='center'>
+    <img width=200 height=200 src='https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif' alt='Be kind to your mind' />
+    <img width=200 height=200 src='https://media.giphy.com/media/KEAAbQ5clGWJwuJuZB/giphy.gif' alt='Love each other' />
+    <img width=200 height=200 src='https://media.giphy.com/media/WRWykrFkxJA6JJuTvc/giphy.gif' alt="It's ok to have a bad day" />
+</p>
 
-<!-- Public links -->
-
-[semver]: http://semver.org/
-
-<!-- External links -->
-
-[coffee]: https://www.buymeacoffee.com/joellefkowitz
-[coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
-[be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
-
-<!-- Acknowledgments -->
-
-[author]: https://github.com/joellefkowitz
-
-<!-- Project shields -->
-
-[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/random-env
-[license_shield]: https://img.shields.io/github/license/joellefkowitz/random-env
-[lines_shield]: https://img.shields.io/tokei/lines/github/joellefkowitz/random-env
-[languages_shield]: https://img.shields.io/github/languages/count/joellefkowitz/random-env
-
-<!-- Health shields -->
-
-[codacy_shield]: https://img.shields.io/codacy/grade/91b70f5bf54b4f0a9bebf839321a8b8d
-[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/91b70f5bf54b4f0a9bebf839321a8b8d
-
-<!-- Repository shields -->
-
-[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/random-env
-[issues_closed_shield]: https://img.shields.io/github/issues-closed/joellefkowitz/random-env
-[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/random-env
-[pulls_closed_shield]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/random-env
-
-<!-- Activity shields -->
-
-[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/random-env
-[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/random-env
-[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/random-env
+[latest_release]: https://img.shields.io/github/v/tag/joellefkowitz/random-env "Latest release"
+[license]: https://img.shields.io/github/license/joellefkowitz/random-env "License"
+[line_count]: https://img.shields.io/tokei/lines/github/joellefkowitz/random-env "Line count"
+[language_count]: https://img.shields.io/github/languages/count/joellefkowitz/random-env "Language count"
+[documentation]: https://img.shields.io/readthedocs/random-env "Documentation"
+[review_action]: https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/random-env/review.yml "Review action"
+[codacy_quality]: https://img.shields.io/codacy/grade/91b70f5bf54b4f0a9bebf839321a8b8d "Codacy quality"
+[codacy_coverage]: https://img.shields.io/codacy/coverage/91b70f5bf54b4f0a9bebf839321a8b8d "Codacy coverage"
+[npm_version]: https://img.shields.io/npm/v/random-env "NPM Version"
+[npm_downloads]: https://img.shields.io/npm/dw/random-env "NPM Downloads"
+[open_issues]: https://img.shields.io/github/issues/joellefkowitz/random-env "Open issues"
+[closed_issues]: https://img.shields.io/github/issues-closed/joellefkowitz/random-env "Closed issues"
+[open_pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/random-env "Open pull requests"
+[closed_pulls]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/random-env "Closed pull requests"
+[contributors]: https://img.shields.io/github/contributors/joellefkowitz/random-env "Contributors"
+[monthly_commits]: https://img.shields.io/github/commit-activity/m/joellefkowitz/random-env "Monthly commits"
+[last_commit]: https://img.shields.io/github/last-commit/joellefkowitz/random-env "Last commit"

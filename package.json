@@ -1,61 +1,51 @@
 {
   "name": "random-env",
   "version": "1.0.0",
-  "description": "Github action to set global environment variables to random values.",
-  "repository": "https://github.com/JoelLefkowitz/random-env.git",
+  "description": "GitHub action to set global environment variables to random values.",
+  "repository": "https://github.com/joellefkowitz/random-env",
+  "homepage": "https://random-env.readthedocs.io",
   "author": "Joel Lefkowitz",
   "license": "MIT",
-  "keywords": [
-    "action",
-    "environment",
-    "github",
-    "random",
-    "variables"
+  "main": "dist/index.js",
+  "files": [
+    "dist"
   ],
   "scripts": {
-    "cspell": "cspell '.*' '*' '**/*'",
-    "eslint": "eslint 'src/**/*.ts' --fix",
-    "prettier": "prettier . --write --ignore-path .gitignore",
-    "remark": "remark -r .remarkrc -i .gitignore . .github",
-    "tsc": "tsc -p src/tsconfig.json",
-    "lint": "yarn cspell && yarn eslint && yarn remark",
-    "format": "yarn prettier",
-    "test": "yarn tsc && nyc mocha dist --exit",
-    "bundle": "ncc build src/main.ts -o publish"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@actions/core": "^1.4.0"
   },
   "devDependencies": {
-    "@angular-eslint/eslint-plugin": "^12.3.0",
-    "@angular-eslint/eslint-plugin-template": "^12.3.0",
-    "@angular-eslint/template-parser": "^12.3.0",
-    "@istanbuljs/nyc-config-typescript": "^1.0.1",
-    "@types/chai": "^4.2.21",
-    "@types/mocha": "^9.0.0",
-    "@types/node": "^16.4.7",
-    "@types/sinon": "^10.0.2",
-    "@types/sinon-chai": "^3.2.5",
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.5",
-    "@vercel/ncc": "^0.29.0",
-    "chai": "^4.3.4",
-    "cspell": "^5.6.6",
-    "eslint": "^7.31.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsdoc": "^35.4.3",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
-    "istanbul": "^0.4.5",
-    "mocha": "^9.0.3",
-    "nyc": "^15.1.0",
-    "prettier": "^2.3.2",
-    "remark-cli": "^9.0.0",
-    "remark-lint": "^8.0.0",
-    "remark-preset-lint-recommended": "^5.0.0",
-    "sinon": "^11.1.2",
-    "sinon-chai": "^3.7.0",
-    "source-map-support": "^0.5.19",
-    "typescript": "^4.3.5"
+    "@types/jest": "28.1.1",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.36.1",
+    "cspell": "^6.26.3",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint": "~8.34.0",
+    "husky": "^8.0.3",
+    "jest": "28.1.1",
+    "nps-utils": "^1.7.0",
+    "nps": "^5.10.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.8.4"
+  },
+  "metadata": {
+    "documentation": "https://random-env.readthedocs.io",
+    "packages": "https://npmjs.com/package/random-env",
+    "languages": [
+      "TypeScript"
+    ],
+    "frameworks": [],
+    "paradigms": [
+      "Functional"
+    ],
+    "lifecycle": "Alpha",
+    "publisher": "npm"
   }
 }

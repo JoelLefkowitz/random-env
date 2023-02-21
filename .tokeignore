@@ -1,6 +1,7 @@
+.github/
+.husky/
 *.json
 *.md
 *.yml
-publish/*
+docs/
 yarn.lock
-

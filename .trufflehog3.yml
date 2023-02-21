@@ -1,0 +1,26 @@
+severity: low
+exclude:
+  - message: Codacy project public id
+    pattern: 91b70f5bf54b4f0a9bebf839321a8b8d
+
+  - message: Codacy project public id (old)
+    pattern: ac5e502af3894dd49fcd811d671d2c65
+
+  - message: README examples
+    pattern: TEST_
+    paths:
+      - README.md
+
+  - message: Sourcemaps
+    pattern: sourceMappingURL=data:application/json;base64,
+
+  - message: Giphy links
+    pattern: https://media.giphy.com/media/
+
+  - message: Dependencies
+    paths:
+      - package-lock.json
+      - node_modules
+      - venv
+      - yarn-error.log
+      - yarn.lock
