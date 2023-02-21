@@ -1,6 +1,6 @@
 {
   "name": "random-env",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GitHub action to set global environment variables to random values.",
   "repository": "https://github.com/joellefkowitz/random-env",
   "homepage": "https://random-env.readthedocs.io",
