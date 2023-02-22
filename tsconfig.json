@@ -1,7 +1,6 @@
 {
   "root": true,
   "compilerOptions": {
-    "outDir": "dist",
     "allowUnreachableCode": false,
     "downlevelIteration": true,
     "allowUnusedLabels": false,
@@ -11,13 +10,10 @@
     "noImplicitReturns": true,
     "noUncheckedIndexedAccess": true,
     "strict": true,
-    "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "declaration": true,
     "importHelpers": true,
     "removeComments": true,
-    "sourceMap": true,
     "allowJs": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

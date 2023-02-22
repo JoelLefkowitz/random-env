@@ -34,12 +34,6 @@ TEST_EMAIL=9102634d826b733e828a19317250337aw
 TEST_PASSWORD=943b9f5e0a0b3d9acbfe05779dfab69f
 ```
 
-## Installation
-
-```bash
-npm i random-env
-```
-
 ## Tests
 
 To run tests:
