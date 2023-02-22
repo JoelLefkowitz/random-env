@@ -13,5 +13,5 @@ branding:
   color: "gray-dark"
 
 runs:
-  using: "node12"
-  main: "./dist/main.js"
+  using: "node16"
+  main: "./publish/main.js"
