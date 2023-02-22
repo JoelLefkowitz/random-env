@@ -1,7 +1,7 @@
 {
   "root": true,
   "extends": ["eslint:recommended", "prettier"],
-  "ignorePatterns": ["build", "coverage", "dist", "node_modules", "venv"],
+  "ignorePatterns": ["build", "coverage", "dist", "publish", "node_modules", "venv"],
   "env": {
     "browser": true,
     "es6": true,
