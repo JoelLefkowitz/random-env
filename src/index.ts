@@ -1,2 +1,2 @@
-export * from "./strings"
-export * from "./set"
+export * from "./strings";
+export * from "./set";
