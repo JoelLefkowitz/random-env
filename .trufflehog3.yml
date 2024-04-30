@@ -1,0 +1,24 @@
+severity: low
+exclude:
+  - message: Giphy links
+    pattern: media\.giphy\.com
+
+  - message: Shield links
+    pattern: img\.shields\.io
+
+  - message: Source mappings
+    pattern: sourceMappingURL=data:application/json;
+
+  - message: Test environment variables
+    pattern: TEST_.*=
+
+  - message: Dependencies
+    paths:
+      - node_modules
+
+  - message: Tooling outputs
+    paths:
+      - docs/dist
+      - package-lock.json
+      - yarn-error.log
+      - yarn.lock

@@ -1,2 +1,1 @@
-export * from "./strings";
-export * from "./set";
+export { set } from "./set";
