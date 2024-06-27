@@ -56,7 +56,7 @@ yarn install
 To run tests:
 
 ```bash
-npm run test
+yarn test
 ```
 
 ### Documentation
@@ -64,7 +64,7 @@ npm run test
 To generate the documentation locally:
 
 ```bash
-npm run docs
+yarn docs
 ```
 
 ### Linters
@@ -72,7 +72,7 @@ npm run docs
 To run linters:
 
 ```bash
-npm run lint
+yarn lint
 ```
 
 ### Formatters
@@ -80,7 +80,7 @@ npm run lint
 To run formatters:
 
 ```bash
-npm run format
+yarn format
 ```
 
 ## Contributing
