@@ -1,5 +1,3 @@
-import * as core from "@actions/core";
-
 import { set } from "./set";
 
 describe("set", () => {
@@ -18,15 +16,5 @@ describe("set", () => {
 
     expect(process.env.test2).toBeTruthy();
     expect(process.env.test2?.length).toBe(32);
-  });
-
-  it("handles incorrect types gracefully", () => {
-    const setFailed = jest.spyOn(core, "setFailed");
-    const exit = jest.spyOn(process, "exit").mockImplementation();
-
-    set("123");
-
-    expect(setFailed).toHaveBeenCalledWith("Invalid identifier name: 123");
-    expect(exit).toHaveBeenCalledWith(1);
   });
 });

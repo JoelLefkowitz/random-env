@@ -34,7 +34,7 @@
     "postpack": "pinst --enable",
     "lint": "cspell . --dot --gitignore && eslint . --fix && tsc --noEmit && trufflehog3",
     "format": "prettier . --write",
-    "build": "tsc",
+    "build": "rollup -c rollup.config.js",
     "test": "jest",
     "docs": "typedoc --options docs/typedoc/typedoc.json && ts-node ./docs/typedoc/assets.ts"
   },
@@ -46,9 +46,12 @@
     "@actions/core": "^1.10.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/glob": "^8.1.0",
     "@types/jest": "29.0.0",
-    "@types/node": "^18.11.0",
+    "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "cspell": "^8.0.0",
@@ -60,6 +63,7 @@
     "pinst": "^3.0.0",
     "prettier": "^3.0.0",
     "prettier-plugin-jsdoc": "^1.3.0",
+    "rollup": "^4.18.0",
     "ts-jest": "^29.0.0",
     "ts-node": "^10.9.2",
     "tslib": "^2.3.0",

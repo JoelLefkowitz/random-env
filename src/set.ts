@@ -1,5 +1,4 @@
 import { exportVariable, setFailed } from "@actions/core";
-
 import { lines } from "./strings";
 import { randomBytes } from "crypto";
 

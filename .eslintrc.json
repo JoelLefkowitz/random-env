@@ -2,7 +2,7 @@
   "root": true,
   "extends": ["eslint:recommended", "prettier"],
   "env": { "es6": true, "node": true },
-  "ignorePatterns": ["dist"],
+  "ignorePatterns": ["dist", "publish"],
   "overrides": [
     {
       "files": ["*.ts"],
