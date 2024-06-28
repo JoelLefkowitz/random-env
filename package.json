@@ -6,7 +6,7 @@
   "author": "Joel Lefkowitz",
   "repository": "https://github.com/joellefkowitz/random-env",
   "homepage": "https://joellefkowitz.github.io/random-env",
-  "main": "dist/index.js",
+  "main": "publish/main.js",
   "files": [
     "publish"
   ],
