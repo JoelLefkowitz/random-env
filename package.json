@@ -8,7 +8,7 @@
   "homepage": "https://joellefkowitz.github.io/random-env",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "publish"
   ],
   "keywords": [
     "random",
