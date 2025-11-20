@@ -2,7 +2,7 @@
 
 GitHub action to set global environment variables to random values.
 
-![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/random-env/review.yml)
+![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/random-env/review.yaml)
 ![Version](https://img.shields.io/npm/v/random-env)
 ![Downloads](https://img.shields.io/npm/dw/random-env)
 ![Size](https://img.shields.io/bundlephobia/min/random-env)

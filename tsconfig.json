@@ -23,7 +23,7 @@
     "target": "ES5",
     "baseUrl": ".",
     "resolveJsonModule": true,
-    "declaration": false,
+    "declaration": true,
     "importHelpers": false,
     "removeComments": true,
     "sourceMap": false,
